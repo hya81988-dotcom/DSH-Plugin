@@ -1,0 +1,4 @@
+- insert:
+    - id: your-name-startup-theme
+      name: dsh-your-name-theme
+      config: {}

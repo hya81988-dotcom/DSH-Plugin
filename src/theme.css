@@ -1,0 +1,110 @@
+/* Owned namespace only. No host content is reparented or replaced. */
+body[data-yn-theme] {
+  --yn-text:#f5f7ff; --yn-muted:#c3cede; --yn-red:#ec8795;
+  --yn-surface:rgba(13,21,37,.94); --yn-border:rgba(238,178,161,.24);
+  --dsw-alias-label-primary:#f5f7ff;--dsw-alias-label-secondary:#dce4f2;
+  --dsw-alias-label-primary-inverted:#0b1426;
+  --dsw-alias-label-tertiary:#c3cede;--dsw-alias-label-caption:#c3cede;
+  --dsw-alias-bg-base:#101a2c;--dsw-alias-bg-l1:#142038;--dsw-alias-bg-l2:#18253c;
+  --dsw-specific-sidebar-fill:#101a2c;--dsw-alias-border-l3:#53617a;
+  --dsw-alias-interactive-bg-hover:#28364c;
+  color:var(--yn-text); background:#0b1426 !important; isolation:isolate;
+  color-scheme:dark;
+}
+.yn-wallpaper { position:fixed;inset:0;z-index:-1;pointer-events:none;background-color:#0b1426;
+  background-image:linear-gradient(105deg,rgba(9,17,33,.72),rgba(15,23,42,.56) 60%,rgba(15,23,42,.7)),var(--yn-wallpaper,none);
+  background-size:cover;background-position:var(--yn-bg-position,58% 50%); }
+body[data-yn-theme] .yn-app, body[data-yn-theme] .yn-main {
+  background:transparent !important;background-image:none !important;color:var(--yn-text) !important;
+}
+body[data-yn-theme] .yn-clear {background:transparent !important;background-image:none !important;}
+body[data-yn-theme] .yn-sidebar {
+  position:relative;background:#0a1222 !important;background-image:none !important;
+  color:var(--yn-text) !important;border-right:1px solid var(--yn-border) !important;
+  box-shadow:12px 0 42px rgba(3,7,18,.16);isolation:isolate;
+}
+.yn-sidebar-scenery {position:absolute;inset:0;pointer-events:none;z-index:-1;overflow:hidden;border-radius:inherit;
+  background:radial-gradient(ellipse at 74% 48%,rgba(107,89,157,.22),transparent 60%),linear-gradient(175deg,#101a35,#18213f 53%,#253a5a);}
+.yn-sidebar-scenery::after {content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(180deg,transparent 86%,rgba(10,18,34,.84) 100%);}
+.yn-sidebar-art {position:absolute;inset:0;width:100%;height:100%;opacity:.86;}
+.yn-scene-stars {opacity:.56;}
+.yn-scene-comet {opacity:.72;}
+.yn-lake-scene {opacity:.93;}
+.yn-sky-motifs {position:absolute;inset:0;pointer-events:none;overflow:hidden;}
+.yn-sky-motifs>svg {width:100%;height:100%;}
+.yn-sky-comet {opacity:.55;}
+.yn-sky-stars {opacity:.45;}
+.yn-distant-clouds {opacity:.8;}
+body[data-yn-theme] .yn-sidebar :where(p,span,label,small,button,a,[role="treeitem"]) {color:inherit !important;}
+body[data-yn-theme] .yn-sidebar :where(button,[role="button"],[role="treeitem"],a) {
+  background-color:rgba(15,25,43,.94) !important;border-color:var(--yn-border) !important;
+  transition:transform 160ms ease,opacity 160ms ease;will-change:transform,opacity;
+}
+body[data-yn-theme] .yn-sidebar :where(button,[role="button"],[role="treeitem"],a):hover {transform:translateX(2px);opacity:.85;}
+body[data-yn-theme] :where(button,a,input,textarea,[contenteditable],[tabindex]):focus-visible {
+  outline:2px solid #ffb9ad !important;outline-offset:3px;
+}
+body[data-yn-theme] .yn-header {background:rgba(12,21,37,.94) !important;color:var(--yn-text) !important;
+  background-image:none !important;border-bottom:1px solid var(--yn-border) !important;}
+body[data-yn-theme] .yn-header :where(span,button,p) {color:inherit !important;}
+body[data-yn-theme] .yn-message {
+  color:#f5f7ff !important;background:rgba(13,21,37,.94) !important;background-image:none !important;
+  border:1px solid rgba(219,192,182,.2) !important;border-radius:16px !important;
+  padding:18px 22px !important;box-shadow:0 12px 36px rgba(0,0,0,.12);
+  line-height:1.75;overflow-wrap:anywhere;
+}
+body[data-yn-theme] .yn-message :where(p,li,span,strong,em,h1,h2,h3,h4,td,th) {color:inherit !important;}
+body[data-yn-theme] .yn-message a {color:#ffd3b4 !important;text-decoration:underline;text-underline-offset:3px;}
+body[data-yn-theme] .yn-message :where(pre,code) {background:#080f1e !important;color:#e8edf8 !important;border-radius:6px;}
+body[data-yn-theme] .yn-message pre {overflow:auto;padding:14px;}
+body[data-yn-theme] .yn-message table {border-collapse:collapse;}
+body[data-yn-theme] .yn-message :where(td,th) {border:1px solid #53617a;padding:7px 12px;}
+body[data-yn-theme] .yn-composer {
+  position:relative;background:rgba(13,21,37,.94) !important;background-image:none !important;
+  color:#f5f7ff !important;border:1px solid rgba(236,135,149,.6) !important;border-radius:20px !important;
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  box-shadow:0 0 0 1px rgba(236,135,149,.08),0 0 24px rgba(160,45,69,.12),0 15px 42px rgba(0,0,0,.25);
+}
+body[data-yn-theme] .yn-composer :where(textarea,[contenteditable],input) {
+  background:transparent !important;color:#f5f7ff !important;caret-color:#ffc7bb;
+  border-color:transparent !important;box-shadow:none !important;
+}
+body[data-yn-theme] .yn-composer :where(textarea,input)::placeholder {color:#c3cede !important;opacity:1;}
+body[data-yn-theme] .yn-composer :where(button,span,label,small) {color:#dce4f2 !important;}
+body[data-yn-theme] .yn-composer button {background-color:rgba(37,49,69,.8) !important;}
+/* Preserve native caption-control positioning and brand chrome. In particular,
+   Windows pins the existing toggle in the titlebar, not in the logo row. */
+body[data-yn-theme] .yn-sidebarToggle,
+body[data-yn-theme] .yn-sidebarToggle:hover,
+body[data-yn-theme] .yn-logo,
+body[data-yn-theme] .yn-logo:hover {
+  background-color:transparent !important;transform:none !important;opacity:1 !important;will-change:auto;
+}
+body[data-yn-theme] .yn-brandRow {overflow:visible !important;}
+body[data-yn-theme] .yn-logo {position:relative;isolation:isolate;overflow:visible !important;
+  --dsw-alias-label-primary-inverted:#0b1426;}
+/* Keep the identity itself bounded while allowing its separate cord to extend
+   below it. Do not reparent React-owned content or disable the native toggle. */
+body[data-yn-theme] .yn-logo>:not(.yn-knot) {min-width:0;max-width:100%;overflow:hidden;}
+.yn-knot {position:absolute;pointer-events:none;user-select:none;z-index:2;height:40px;left:6px;right:6px;bottom:-18px;overflow:visible;}
+.yn-knot svg {width:100%;height:100%;overflow:visible;}
+.yn-logo>.yn-knot {height:18px;left:0;right:0;top:calc(100% - 3px);bottom:auto;}
+.yn-composer>.yn-knot {top:-25px;bottom:auto;height:38px;left:12%;right:12%;}
+.yn-knot-breath {animation:yn-breath 5s ease-in-out infinite;transform-origin:center;will-change:transform,opacity;}
+.yn-thread-glint {animation:yn-glint 8s ease-in-out infinite;will-change:transform,opacity;}
+@keyframes yn-breath {0%,100%{opacity:.76;transform:translateY(0)}50%{opacity:1;transform:translateY(-1px)}}
+@keyframes yn-glint {0%,32%{transform:translateX(0);opacity:0}40%{opacity:.55}80%{transform:translateX(680px);opacity:.55}81%,100%{transform:translateX(680px);opacity:0}}
+body[data-yn-theme] .yn-legacy-decor {visibility:hidden !important;pointer-events:none !important;}
+.yn-intro {position:fixed;inset:0;z-index:2147483600;touch-action:none;overscroll-behavior:contain;outline:none;isolation:isolate;will-change:opacity;}
+.yn-intro-visual {position:absolute;inset:0;background:#0b1426;will-change:opacity;}
+.yn-intro video {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#fff;opacity:0;will-change:opacity;transition:opacity 100ms linear;}
+.yn-intro[data-video-ready] video {opacity:1;}
+.yn-intro-hint {position:absolute;right:max(24px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));
+  border:1px solid rgba(255,255,255,.35);border-radius:99px;padding:9px 16px;color:white;background:rgba(10,18,34,.86);font:12px/1.5 system-ui;cursor:pointer;z-index:1;}
+.yn-intro-sound {right:auto;left:max(24px,env(safe-area-inset-left));}
+.yn-intro-sound:focus-visible {outline:2px solid #ffb9ad;outline-offset:3px;}
+.yn-intro-mask-defs {position:absolute;width:0;height:0;pointer-events:none;overflow:hidden;}
+@media(prefers-reduced-motion:reduce) {.yn-knot * {animation:none !important;}body[data-yn-theme] *{scroll-behavior:auto !important;}.yn-intro video{transition:none;}}
+@supports not (backdrop-filter:blur(1px)) {body[data-yn-theme] .yn-composer{background:#101a2c !important;}}
+@media(max-width:700px){body[data-yn-theme] .yn-message{padding:14px 16px !important;}.yn-composer>.yn-knot{left:8%;right:8%;}}

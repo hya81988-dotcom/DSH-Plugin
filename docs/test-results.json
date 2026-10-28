@@ -1,0 +1,98 @@
+{
+  "testedAt": "2026-10-28T03:12:44.912Z",
+  "scope": "Chromium mock DSH DOM + real supplied video; not an installed DSH application",
+  "results": [
+    {
+      "name": "Theme surfaces, background and inline braided SVG",
+      "status": "PASS"
+    },
+    {
+      "name": "Normal tail dissolves for 1200ms while original video keeps playing",
+      "status": "PASS"
+    },
+    {
+      "name": "Long left press skip: mouseup and click never pass through",
+      "status": "PASS"
+    },
+    {
+      "name": "Right and middle mouse buttons do not skip",
+      "status": "PASS"
+    },
+    {
+      "name": "Touch skip suppresses synthesized mouse/click sequence",
+      "status": "PASS"
+    },
+    {
+      "name": "Reduced motion bypasses video and removes perpetual animations",
+      "status": "PASS"
+    },
+    {
+      "name": "Autoplay rejection reveals theme instead of trapping input",
+      "status": "PASS"
+    },
+    {
+      "name": "Missing video and missing background have bounded fallbacks",
+      "status": "PASS"
+    },
+    {
+      "name": "Default dissolve blends the entire viewport and all intro controls uniformly",
+      "status": "PASS"
+    },
+    {
+      "name": "Viewport resize preserves an in-progress opacity dissolve",
+      "status": "PASS"
+    },
+    {
+      "name": "Ended-event fallback uses the same gentle full-duration dissolve",
+      "status": "PASS"
+    },
+    {
+      "name": "DSH display name is exported through English, Chinese and Japanese locale metadata",
+      "status": "PASS"
+    },
+    {
+      "name": "SVG inverse mask really opens a hole at measured source center",
+      "status": "PASS"
+    },
+    {
+      "name": "Dynamic composer replacement gets exactly one decoration",
+      "status": "PASS"
+    },
+    {
+      "name": "CSS-module export adapter resolves changed hash prefixes",
+      "status": "PASS"
+    },
+    {
+      "name": "Cleanup cancels in-flight mount and permits clean remount",
+      "status": "PASS"
+    },
+    {
+      "name": "Critical text colors pass AA against worst-case white photo",
+      "status": "PASS"
+    },
+    {
+      "name": "Audible autoplay is tried first; policy rejection retries muted",
+      "status": "PASS"
+    },
+    {
+      "name": "Sound button enables audio without skipping or restarting video",
+      "status": "PASS"
+    },
+    {
+      "name": "Keyboard sound control does not trigger global Enter-to-skip",
+      "status": "PASS"
+    },
+    {
+      "name": "Touch sound control keeps the movie playing and blocks ghost clicks",
+      "status": "PASS"
+    },
+    {
+      "name": "Sidebar uses independent lake artwork; staircase photo is painted once",
+      "status": "PASS"
+    },
+    {
+      "name": "No uncaught browser errors",
+      "status": "PASS"
+    }
+  ]
+}

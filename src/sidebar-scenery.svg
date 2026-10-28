@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="yn-sidebar-art" viewBox="0 0 300 900" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="__ID__-sky" x1="40" y1="0" x2="270" y2="900" gradientUnits="userSpaceOnUse"><stop stop-color="#15244c"/><stop offset=".5" stop-color="#242951" stop-opacity=".12"/><stop offset="1" stop-color="#355580" stop-opacity=".64"/></linearGradient>
+    <linearGradient id="__ID__-blue"><stop stop-color="#c8f4ff" stop-opacity="0"/><stop offset=".74" stop-color="#9cdbff" stop-opacity=".5"/><stop offset="1" stop-color="#f5fbff"/></linearGradient>
+    <linearGradient id="__ID__-pink"><stop stop-color="#edc0fa" stop-opacity="0"/><stop offset="1" stop-color="#f3a8d4" stop-opacity=".8"/></linearGradient>
+    <!-- Quiet sky dissolves into the host sidebar; terrain below stays legible. -->
+    <linearGradient id="__ID__-landscape-fade" x1="0" y1="450" x2="0" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="white" stop-opacity="0"/>
+      <stop offset=".18" stop-color="white" stop-opacity="0"/>
+      <stop offset=".35" stop-color="white" stop-opacity=".64"/>
+      <stop offset=".48" stop-color="white"/>
+      <stop offset="1" stop-color="white"/>
+    </linearGradient>
+    <mask id="__ID__-landscape-mask" maskUnits="userSpaceOnUse" x="0" y="450" width="300" height="450" style="mask-type:alpha">
+      <path d="M0 450H300V900H0Z" fill="url(#__ID__-landscape-fade)"/>
+    </mask>
+    <linearGradient id="__ID__-fallback-water"><stop stop-color="#293951"/><stop offset=".55" stop-color="#4b5b73"/><stop offset="1" stop-color="#22374c"/></linearGradient>
+  </defs>
+  <path fill="url(#__ID__-sky)" d="M0 0H300V900H0z"/>
+  <!-- Independent landscape asset; __LAKE_ART__ is replaced with a managed Blob URL.
+       Both portrait aspect and original pixel geometry are preserved. No HTTP fetch. -->
+  <g class="yn-lake-scene" mask="url(#__ID__-landscape-mask)">
+    <!-- Muted terrain fallback is visible only if the embedded painting fails. -->
+    <g class="yn-lake-fallback" opacity=".7">
+      <path d="M0 669Q42 655 87 664Q129 651 170 660Q226 649 300 663V900H0Z" fill="#2c3653"/>
+      <path d="M0 718Q45 703 92 714Q150 701 217 713Q257 704 300 718V900H0Z" fill="#28324b"/>
+      <path d="M33 761C63 736 119 732 161 737C208 736 258 752 267 772C275 803 224 828 157 833C82 833 31 812 33 782Z" fill="url(#__ID__-fallback-water)"/>
+      <path d="M0 843Q53 820 91 847Q150 832 199 847Q252 821 300 841V900H0Z" fill="#1d263e"/>
+    </g>
+    <image class="yn-lake-art" x="0" y="450" width="300" height="450" preserveAspectRatio="xMidYMid slice" href="__LAKE_ART__"/>
+  </g>
+  <g class="yn-scene-stars" fill="#d8eaff"><circle cx="35" cy="70" r="1"/><circle cx="245" cy="104" r="1.2"/><circle cx="90" cy="190" r=".8"/><circle cx="275" cy="260" r=".8"/><circle cx="25" cy="350" r="1.1"/><circle cx="227" cy="420" r=".7"/><circle cx="47" cy="532" r="1"/><circle cx="181" cy="515" r=".7"/><circle cx="273" cy="582" r="1.1"/><circle cx="109" cy="604" r=".7"/></g>
+  <!-- The approved blue/rose comet is retained byte-for-byte. -->
+  <g class="yn-scene-comet">
+    <path d="M34 365Q106 397 217 498" stroke="url(#__ID__-blue)" stroke-width="5" stroke-linecap="round"/>
+    <path d="M30 365Q116 406 217 498" stroke="url(#__ID__-blue)" stroke-width="1.2"/>
+    <path d="M76 400Q147 442 247 538" stroke="url(#__ID__-pink)" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="217" cy="498" r="3" fill="#ebfaff"/><circle cx="247" cy="538" r="1.9" fill="#f8cee7"/>
+  </g>
+</svg>
