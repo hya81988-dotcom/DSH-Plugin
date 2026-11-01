@@ -1,0 +1,4 @@
+- insert:
+    - id: your-name-startup-animation
+      name: dsh-your-name-startup
+      config: {}

@@ -1,0 +1,51 @@
+{
+  "name": "dsh-your-name-startup",
+  "version": "1.2.1",
+  "description": "君の名はdsh · 启动动画：原视频与音效、渐隐过渡及点击跳过，不修改聊天背景。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "files": [
+    "lib",
+    "assets",
+    "src",
+    "scripts",
+    "locale/*.json",
+    "docs",
+    "preview",
+    "tests",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "INSTALL.txt",
+    "icon.svg"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "yourName": {
+    "component": "startup",
+    "entry": "your-name-startup-animation"
+  },
+  "icon": "./icon.svg"
+}

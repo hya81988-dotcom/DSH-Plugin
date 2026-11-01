@@ -1,0 +1,58 @@
+{
+  "testedAt": "2026-10-31T03:23:37.257Z",
+  "scope": "Chromium with mock DSH DOM and official token/module contracts; not a real DSH desktop installation",
+  "results": [
+    {
+      "name": "Theme-only: no video, no input shield, no startup focus change",
+      "status": "PASS"
+    },
+    {
+      "name": "Startup-only: preserves native light UI, palette, body attributes and focus",
+      "status": "PASS"
+    },
+    {
+      "name": "Light host: portaled modal, file/code cards, inputs and semantic colors pass AA",
+      "status": "PASS"
+    },
+    {
+      "name": "Dark host: portaled modal, file/code cards, inputs and semantic colors pass AA",
+      "status": "PASS"
+    },
+    {
+      "name": "Dialogs added after mounting are themed and stay functional",
+      "status": "PASS"
+    },
+    {
+      "name": "Both mount orders coexist; disabling startup keeps the theme mounted",
+      "status": "PASS"
+    },
+    {
+      "name": "Disabling/re-enabling the theme does not pause, restart or dismiss the movie",
+      "status": "PASS"
+    },
+    {
+      "name": "Theme asset failure cannot delay an independent startup component",
+      "status": "PASS"
+    },
+    {
+      "name": "Independent DSH apply/effect lifecycle and repeated enable/disable leave no owned DOM",
+      "status": "PASS"
+    },
+    {
+      "name": "Published packages contain distinct metadata, manifest and only their own media",
+      "status": "PASS"
+    },
+    {
+      "name": "Configuration overrides cannot re-couple the two components",
+      "status": "PASS"
+    },
+    {
+      "name": "Brand contrast, fixed native toggle and unclipped knot remain correct",
+      "status": "PASS"
+    },
+    {
+      "name": "No uncaught browser errors in independent component cases",
+      "status": "PASS"
+    }
+  ]
+}

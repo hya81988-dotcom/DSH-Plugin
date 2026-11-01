@@ -1,0 +1,16 @@
+君の名はdsh 1.2.1 — 界面主题（独立组件）
+
+这个目录是完整、可直接安装的界面主题包，不再播放启动视频。
+已有插件目录 D:\dsh-plugins\君の名はdsh 可直接原位升级。
+完全退出 DSH（包括托盘），将本目录内容覆盖到原插件目录。
+必须直接存在：
+  D:\dsh-plugins\君の名はdsh\package.json
+  D:\dsh-plugins\君の名はdsh\lib\index.js
+  D:\dsh-plugins\君の名はdsh\lib\client.js
+
+如需重新登记或刷新复制到 profile 的包，在 PowerShell 执行：
+  dsh plugin --profile desktop add "D:\dsh-plugins\君の名はdsh"
+
+启动动画位于另一个完整目录“君の名はdsh-启动动画”，需单独添加。
+重启后列表中两个项目可独立开关，主题包保留原包标识用于升级。
+不要将整个双组件总目录作为一个 DSH 插件添加。

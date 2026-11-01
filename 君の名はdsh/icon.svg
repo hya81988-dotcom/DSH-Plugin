@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 64 64" fill="none">
+  <title>君の名はdsh · 彗星与结绳</title>
+  <defs>
+    <linearGradient id="night" x1="8" y1="2" x2="52" y2="64" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17284D"/><stop offset=".56" stop-color="#25375C"/><stop offset="1" stop-color="#101B35"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="51" y1="8" x2="23" y2="36" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#85BCFF" stop-opacity="0"/><stop offset=".55" stop-color="#B3DEFF"/><stop offset="1" stop-color="#F6FDFF"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="57" y1="12" x2="27" y2="38" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E7A2CD" stop-opacity="0"/><stop offset=".6" stop-color="#ECAAD6"/><stop offset="1" stop-color="#FFE9F6"/>
+    </linearGradient>
+    <linearGradient id="cord" x1="12" y1="49" x2="52" y2="42" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CC526D"/><stop offset=".5" stop-color="#FF9EAA"/><stop offset="1" stop-color="#DF647D"/>
+    </linearGradient>
+    <radialGradient id="light" cx="0" cy="0" r="1" gradientTransform="translate(25 34) rotate(90) scale(15)">
+      <stop stop-color="#D9EEFF" stop-opacity=".24"/><stop offset="1" stop-color="#D9EEFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect x=".5" y=".5" width="63" height="63" rx="15.5" fill="url(#night)" stroke="#9BADCB" stroke-opacity=".28"/>
+  <path d="M1 53C13 44 21 45 33 49C43 52 51 48 63 40V49C51 54 43 57 31 54C20 51 10 53 1 59V53Z" fill="#6682AA" opacity=".13"/>
+  <circle cx="14" cy="16" r="1" fill="#C5D4EC" opacity=".8"/>
+  <circle cx="40" cy="15" r=".7" fill="#C5D4EC" opacity=".55"/>
+  <circle cx="51" cy="33" r=".8" fill="#C5D4EC" opacity=".5"/>
+  <circle cx="25" cy="34" r="15" fill="url(#light)"/>
+  <path d="M51 8C43 18 35 26 25 34" stroke="url(#blue)" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M57 12C47 22 37 31 28 37" stroke="url(#pink)" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M49 11L26 34" stroke="#F8FDFF" stroke-opacity=".7" stroke-width=".65" stroke-linecap="round"/>
+  <path d="M25 30.8L26.1 33.1L28.5 34L26.1 35.1L25 37.4L23.9 35.1L21.5 34L23.9 33.1L25 30.8Z" fill="#F7FCFF"/>
+  <path d="M10.5 48.5C16 50 22 49.7 27 46.6C31 44.1 32 41.8 29.5 40.8C26.9 39.7 25.1 42.5 26.8 44.8C29 47.8 34.4 48.2 37.2 45.2C39.9 42.4 37.9 40.1 35.6 41.3C33.5 42.4 34.3 46.4 38.6 48C43.4 49.7 48.5 48.8 53.5 45.3" stroke="#56283C" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M10.5 48.5C16 50 22 49.7 27 46.6C31 44.1 32 41.8 29.5 40.8C26.9 39.7 25.1 42.5 26.8 44.8C29 47.8 34.4 48.2 37.2 45.2C39.9 42.4 37.9 40.1 35.6 41.3C33.5 42.4 34.3 46.4 38.6 48C43.4 49.7 48.5 48.8 53.5 45.3" stroke="url(#cord)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M12 48.7C18 50 22 48.9 26 46.9M39 48.3C44 49.4 48 48.3 52 46.4" stroke="#FFE0D8" stroke-width=".65" stroke-dasharray="1.2 2" stroke-linecap="round"/>
+  <path d="M31 46.6C30 50 28.8 52.2 27 54M34.1 46.8C35 50.3 37 52.4 39 53.5" stroke="#E88598" stroke-width="1.65" stroke-linecap="round"/>
+</svg>

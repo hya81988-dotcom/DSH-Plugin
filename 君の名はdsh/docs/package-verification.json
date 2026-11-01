@@ -1,0 +1,21 @@
+{
+  "version": "1.2.1",
+  "scope": "Extracted release archive, Chinese sibling package directories, Chromium mock DSH. Not a real DSH desktop installation.",
+  "checksPassed": 36,
+  "reproducibleBuilds": true,
+  "bothRootEntrypointsPresent": true,
+  "approvedMediaUnchangedFrom119": true,
+  "runtimeBundles": {
+    "君の名はdsh": "0a8c1956c0d7a302181f33dbe5b8d94fe51c94a98ac0d23c6ee997c57de44d90",
+    "君の名はdsh-启动动画": "6cc78ffb6785589ffb3c0549a968751f24752d018c20f09231476a5879469d71"
+  },
+  "runtimeRegressionReference": "1.2.0: 36 passing Chromium cases; runtime factory body is byte-identical in 1.2.1",
+  "iconValidation": {
+    "manifestField": "./icon.svg",
+    "exportsIcon": "./icon.svg",
+    "includedInFiles": true,
+    "selfContainedSvg": true,
+    "under256KiB": true,
+    "imgDecodedAt128And40And36": true
+  }
+}

@@ -1,0 +1,36 @@
+君の名はdsh 1.2.1 — 完整拆分升级包
+
+本包包含两个完整、彼此独立的 DSH 插件：
+  君の名はdsh              界面主题（沿用旧包标识，升级原插件）
+  君の名はdsh-启动动画     原视频与音效、渐隐过渡（新独立条目）
+
+安装/升级：
+1. 完全退出 DSH，包括托盘。
+2. 打开 ZIP，把里面上述两个文件夹直接复制到 D:\dsh-plugins。
+   有同名文件时覆盖。不要将整个 ZIP 再解压到“君の名はdsh”里面。
+3. 最终必须直接存在：
+   D:\dsh-plugins\君の名はdsh\package.json
+   D:\dsh-plugins\君の名はdsh\lib\index.js
+   D:\dsh-plugins\君の名はdsh\lib\client.js
+   D:\dsh-plugins\君の名はdsh-启动动画\package.json
+   D:\dsh-plugins\君の名はdsh-启动动画\lib\index.js
+   D:\dsh-plugins\君の名はdsh-启动动画\lib\client.js
+4. 在 PowerShell 依次执行：
+   dsh plugin --profile desktop add "D:\dsh-plugins\君の名はdsh"
+   dsh plugin --profile desktop add "D:\dsh-plugins\君の名はdsh-启动动画"
+   Web 用户将 desktop 替换成实际使用的 web profile。
+5. 重新打开 DSH，在设置 → 插件中分别开关：
+   “君の名はdsh · 界面主题”
+   “君の名はdsh · 启动动画”
+
+只开主题：直接进入主题，不播放视频。
+只开动画：原视频与音效，结束后进入 DSH 当前界面，不加载本主题背景。
+同时开启：原动画渐隐进入本主题。
+两者都关：恢复 DSH 当前其他配置。
+
+本版修复浅色宿主的文件/代码卡片、删除工作区弹窗等白底浅字。
+原视频、原音轨、主背景与湖景均未重新生成或修改。
+这是双组件总包；请分别添加两个子目录，不要把总目录作为一个插件添加。
+
+
+1.2.1 图标更新：启动动画使用戴女仆头饰的大肥鱼；界面主题使用蓝粉双彗星与红色结绳。两个自带图标均通过 DSH 官方元数据声明加载。已装1.2.0时可使用图标小更新包；如果图标未刷新，重新 add 两个目录并完整退出后重启。

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true" focusable="false">
+  <defs>
+    <linearGradient id="__ID__-comet" x1="854" y1="20" x2="1428" y2="273" gradientUnits="userSpaceOnUse"><stop stop-color="#abdaff" stop-opacity="0"/><stop offset=".7" stop-color="#b3e5ff" stop-opacity=".55"/><stop offset="1" stop-color="#ecfbff"/></linearGradient>
+    <linearGradient id="__ID__-fragment" x1="1050" y1="80" x2="1490" y2="321" gradientUnits="userSpaceOnUse"><stop stop-color="#d6b7ff" stop-opacity="0"/><stop offset="1" stop-color="#ffc7df" stop-opacity=".8"/></linearGradient>
+    <radialGradient id="__ID__-star"><stop stop-color="#e5f8ff" stop-opacity=".6"/><stop offset="1" stop-color="#a8d7ff" stop-opacity="0"/></radialGradient>
+  </defs>
+  <g class="yn-sky-comet">
+    <path d="M854 20Q1152 108 1428 273" stroke="url(#__ID__-comet)" stroke-width="6" stroke-linecap="round"/>
+    <path d="M865 16Q1158 111 1428 273" stroke="url(#__ID__-comet)" stroke-width="1.4"/>
+    <path d="M1050 80Q1307 191 1490 321" stroke="url(#__ID__-fragment)" stroke-width="2.8" stroke-linecap="round"/>
+    <circle cx="1428" cy="273" r="20" fill="url(#__ID__-star)"/><circle cx="1428" cy="273" r="2.6" fill="#ebfaff"/>
+    <circle cx="1490" cy="321" r="1.6" fill="#ffdeed"/>
+  </g>
+  <g class="yn-distant-clouds" stroke="#d6e5f8" stroke-opacity=".14" stroke-width="1.1">
+    <path d="M270 143Q340 124 399 140Q445 108 519 135Q582 124 638 140M286 152Q471 137 650 150"/>
+    <path d="M1110 894Q1187 857 1269 879Q1344 848 1429 870Q1490 853 1565 876M1144 901Q1350 886 1585 891"/>
+  </g>
+  <g class="yn-orbit-lines" stroke="#bfd8ee" stroke-opacity=".09" stroke-width=".8"><path d="M990 -60C1360 43 1505 170 1634 348M1030 -90C1422 32 1550 169 1663 329"/></g>
+  <g fill="#dceeff" class="yn-sky-stars"><circle cx="1198" cy="75" r="1.1"/><circle cx="1507" cy="116" r="1.2"/><circle cx="1330" cy="61" r=".8"/><circle cx="1105" cy="202" r="1"/><circle cx="1538" cy="431" r="1.2"/><circle cx="360" cy="848" r=".9"/><circle cx="1174" cy="818" r=".8"/></g>
+</svg>

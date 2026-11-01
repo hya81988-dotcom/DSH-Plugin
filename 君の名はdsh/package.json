@@ -1,0 +1,53 @@
+{
+  "name": "dsh-your-name-theme",
+  "version": "1.2.1",
+  "description": "君の名はdsh · 界面主题：楼梯背景、彗星湖景与结绳装饰，独立于启动动画。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "files": [
+    "lib",
+    "assets",
+    "src",
+    "scripts",
+    "locale/*.json",
+    "docs",
+    "preview",
+    "tests",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "THIRD_PARTY_NOTICES.md",
+    "INSTALL.txt",
+    "icon.svg"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node tests/run.mjs && node tests/components.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "yourName": {
+    "component": "theme",
+    "entry": "your-name-startup-theme"
+  },
+  "icon": "./icon.svg"
+}
